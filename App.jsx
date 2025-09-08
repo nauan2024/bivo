@@ -2,7 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, Image,Label } from 'react-native';
 import styled from 'styled-components/native';
 import Login from './src/pages/login';
-
+import button from './src/components/button';
+import Title from './src/components/title';
 // const Container = styled.View`
 // flex:1;
 // display:flex;
@@ -21,10 +22,12 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <Text>bOA TARDE POHA</Text>
+        <Title label="Bivô"></Title>
+      
             <Login/>
 
-      <Image source={"././src/assets/logotipo.png"}></Image>
+
+      {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
 

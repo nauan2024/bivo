@@ -1,6 +1,6 @@
-import { Button, TouchableOpacity } from "react-native";
+import { Text, Button, TouchableOpacity } from "react-native";
 
-export default function Button ({ label }){
+export default function button ({ label }){
     return(
         <TouchableOpacity>
            <Text>{label}</Text>
