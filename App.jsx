@@ -22,11 +22,8 @@ export default function App() {
 
    
       <StatusBar hidden />
-        <Title label="Bivô"></Title>
       
             <Login/>
-
-
       {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
