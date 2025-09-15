@@ -4,6 +4,8 @@ import styled from 'styled-components/native';
 import Login from './src/pages/login';
 import button from './src/components/button';
 import Title from './src/components/title';
+import Cadastro from './src/pages/Cadastro';
+import ListaVeiculos from './src/pages/ListaVeiculos';
 // const Container = styled.View`
 // flex:1;
 // display:flex;
@@ -23,7 +25,7 @@ export default function App() {
    
       <StatusBar hidden />
       
-            <Login/>
+            <ListaVeiculos/>
       {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
