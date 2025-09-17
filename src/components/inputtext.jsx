@@ -1,9 +1,10 @@
 import { Text, TouchableOpacity } from "react-native";
 import { EmailInput } from "../pages/login/styles";
 import { Nomeinput } from "../pages/Cadastro/styles";
-export default function Input ({placeholder}) {
+export default function Input ({placeholder, value}) {
     return(
-        <Nomeinput>{placeholder}</Nomeinput>
+        <Nomeinput placeholder={placeholder} >{value}</Nomeinput>
+        
     )
 }
 

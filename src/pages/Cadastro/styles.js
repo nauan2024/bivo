@@ -86,6 +86,8 @@ border-radius:8px;
 color:white;
 `
 
+
+
 export const SenhaInput = styled.TextInput`
 border: 2px solid #003554;
 width: 50%;

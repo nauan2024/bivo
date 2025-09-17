@@ -32,7 +32,7 @@ export default function Entrada() {
                         <Logotipo source={require("../../../src/assets/logotipo.png")}></Logotipo>
                         
                         <InTextcontainer>
-                            <Input placeholder="Placa :"/>
+                            <Input placeholder="Placa :" />
 
                             <Input placeholder="Data :"/>
             
