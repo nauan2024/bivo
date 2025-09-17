@@ -14,6 +14,16 @@ background-color: #0582CA;
 width:100%;
 height:7%;`
 
+export const Downbar = styled.View`
+display:flex;
+justify-content:Bottom;
+background-color: #0582CA;
+width:100%;
+height:17%;
+position:absolute;
+bottom:0px;
+`
+
 export const TitleLeft = styled.Text`
 width:24%;
 display: flex;
@@ -54,4 +64,14 @@ color: white;
 
 export const CamposCards = styled.Text`
 color: white;
+`
+
+export const LineDivision = styled.View`
+
+height: 1;
+background-color: #FFF;
+width: 100%;
+margin-top: 10;
+position:absolute;
+bottom: 50px;
 `

@@ -102,6 +102,14 @@ justify-self:center;
 align-items:center;
 justify-content:center;`
 
+export const LineDivision = styled.View`
 
+height: 1;
+background-color: #FFF;
+width: 100%;
+margin-top: 10;
+position:absolute;
+bottom: 50px;
+`
 
 

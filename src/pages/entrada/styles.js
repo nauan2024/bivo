@@ -1,6 +1,6 @@
 import styled from "styled-components/native"
 
-export const ContainerCadastro = styled.View`
+export const ContainerEntrada = styled.View`
 flex: 1;
 background-color: #00A6FB;
 width:"100%";
@@ -108,12 +108,56 @@ justify-self:center;
 align-items:center;
 justify-content:center;`
 
-export const LineDivision = styled.View`
+export const LineDivisionleft = styled.View`
 
 height: 1;
 background-color: #FFF;
-width: 100%;
+width: 45%;
 margin-top: 10;
 position:absolute;
-bottom: 50px;
+bottom: -70px;
+`
+
+export const LineDivisionright = styled.View`
+
+height: 1;
+background-color: #FFF;
+width: 45%;
+margin-top: 10;
+position:absolute;
+bottom: -70px;
+right: 0px;
+`
+
+export const Line = styled.View`
+
+height: 1.5;
+background-color: #FFF;
+width: 80%;
+margin-top: 10;
+position:absolute;
+bottom: 70px;
+align-self:center;
+`
+
+export const Social = styled.View`
+width:300px;
+height:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;
+margin-bottom:20px;
+align-self:center;
+`
+
+export const CircleSocial = styled.View`
+width:50px;
+height:50px;
+border-radius:50px;
+background-color:#003554;
+justify-content:center;`
+
+export const ContentSocial = styled.Image`
+align-self:center;
 `

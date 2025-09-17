@@ -8,6 +8,8 @@ import { Logotipo } from "./styles";
 import { CardInfo } from "./styles";
 import { ContainerCards } from "./styles";
 import Cards from "../../components/cards";
+import { Downbar } from "./styles";
+import { LineDivision } from "./styles";
 
 export default function ListaVeiculos() {
     return(
@@ -21,8 +23,10 @@ export default function ListaVeiculos() {
                     <Cards/>
                     <Cards/>
                     <Cards/>
-
                 </ContainerCards>
+                <Downbar>
+                    
+                </Downbar>
                 
                 
         </ContainerListaVeiculos>
