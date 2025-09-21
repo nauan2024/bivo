@@ -3,6 +3,7 @@ import { Text } from "react-native";
 import { View } from "react-native";
 import { ComponentContainerCards } from "../pages/ListaVeiculos/styles";
 import { CamposCards } from "../pages/ListaVeiculos/styles";
+import DoubleLines from "./doublelines";
 export default function Cards ({Label}) {
     return(
         <CardInfo>
@@ -15,8 +16,10 @@ export default function Cards ({Label}) {
                     <CamposCards> ABCD1234</CamposCards>
                     <CamposCards> 20/08/2025</CamposCards>
                     <CamposCards> 20:08</CamposCards>
+                    
                 </ComponentContainerCards>
             
         </CardInfo>
+        
     )
 }

@@ -20,6 +20,7 @@ import { ContainerEntrada } from "./styles";
 import { Line } from "./styles";
 import { CircleSocial } from "./styles";
 import SocialIcons from "../../components/SocialIcons";
+import Suporte from "../../components/Suporte";
 export default function Entrada() {
     return(
         <ContainerEntrada>
@@ -32,7 +33,7 @@ export default function Entrada() {
                         <Logotipo source={require("../../../src/assets/logotipo.png")}></Logotipo>
                         
                         <InTextcontainer>
-                            <Input placeholder="Placa :" />
+                            <Input placeholder="Placa :" placeholderTextColor="#FFFFFF" />
 
                             <Input placeholder="Data :"/>
             
@@ -40,10 +41,11 @@ export default function Entrada() {
             
                         </InTextcontainer>
                         <ButtonDad>
-                            <Button label="Entrada"></Button>
+                            <Button label="Entrada" ></Button>
                         </ButtonDad>
                             <SocialIcons></SocialIcons>
                         <Line></Line>
+                        <Suporte></Suporte>
                         
         </ContainerEntrada>
     )

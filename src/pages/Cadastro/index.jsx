@@ -14,6 +14,10 @@ import Input from "../../components/inputtext";
 import { Image } from "react-native";
 import { ContainerLogotipo } from "./styles";
 import { Logotipo } from "./styles";
+import ImgLogotipo from "../../components/LogotipoComponent";
+import OneLine from "../../components/oneLine";
+import SocialIcons from "../../components/SocialIcons";
+import Suporte from "../../components/Suporte";
 
 export default function Cadastro() {
     return(
@@ -24,8 +28,7 @@ export default function Cadastro() {
                         <Title label={"Bivô"}></Title>
                         </ConstainerTitle>
                        
-                        <Logotipo source={require("../../../src/assets/logotipo.png")}></Logotipo>
-                        
+                        <ImgLogotipo/>                        
                         <InTextcontainer>
                             <Input placeholder="Email :"/>
 
@@ -37,6 +40,15 @@ export default function Cadastro() {
                         <ButtonDad>
                             <Button label="Entrar"></Button>
                         </ButtonDad>
+
+                        <SocialIcons></SocialIcons>
+
+                        <OneLine></OneLine>
+
+                        <Suporte/>
+
+                        
+                        
         </ContainerCadastro>
     )
 }

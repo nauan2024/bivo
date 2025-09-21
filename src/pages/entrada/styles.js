@@ -17,9 +17,9 @@ align-self:center;
 top: 20px;
 left: 110px; */
 text-align:center;
-
-
 `
+
+
 export const TitleStyle = styled.Text`
 width:100%;
 background-color:  #00A6FB;
@@ -36,7 +36,6 @@ text-align: center;
 
 export const ButtonDad = styled.View`
 
-margin-top: px;
 width: 50%;
 height:5%;
 display:flex;
@@ -47,7 +46,8 @@ border: #003554 solid 2px;
 border-radius:8px;
 background-color:#003554;
 text-align:center;
-padding-left: 78px;
+justify-content:center;
+align-items:center;
 `
 
 export const ButtonConfig = styled.Button`
@@ -101,7 +101,8 @@ align-items:center;
 justify-content:center;`
 
 export const Logotipo = styled.Image`
-width:120px;
+width:25%;
+height:15%;
 align-self:center;
 justify-self:center;
 justify-self:center;

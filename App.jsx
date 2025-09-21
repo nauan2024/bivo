@@ -7,6 +7,7 @@ import Title from './src/components/title';
 import Cadastro from './src/pages/Cadastro';
 import ListaVeiculos from './src/pages/ListaVeiculos';
 import Entrada from './src/pages/entrada';
+import ImgLogotipo from './src/components/LogotipoComponent';
 // const Container = styled.View`
 // flex:1;
 // display:flex;
@@ -25,10 +26,11 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <Entrada/>
+      <ListaVeiculos/>
         {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
+
 
     
 

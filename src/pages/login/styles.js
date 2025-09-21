@@ -28,17 +28,17 @@ background-color:  #00A6FB;
 display: flex;
 color: white;
 align-self:center;
-font-size: 96;
+font-size: 50px;
 justify-self:center;
 justify-content:center;
 text-align: center;
+margin-top:10%;
 `
 
 
 
 export const ButtonDad = styled.View`
 
-margin-top: px;
 width: 50%;
 height:5%;
 display:flex;
@@ -49,7 +49,7 @@ border: #003554 solid 2px;
 border-radius:8px;
 background-color:#003554;
 text-align:center;
-padding-left: 78px;
+
 `
 
 export const ButtonConfig = styled.Button`
@@ -57,6 +57,8 @@ width: 50%;
 background-color: white;
 border: black solid 2px;
 text-align:center;   
+justify-content:center;
+
 `
 
 export const TextComum = styled.Text`
@@ -64,13 +66,12 @@ color: white;
 `
 
 export const InTextcontainer = styled.View`
-margin-top:50px;
 width:100%;
 height:20%;
 align-self:center;
 display:flex;
 align-items:center;
-gap:50px;
+gap:60px;
 `
 
 export const EmailInput = styled.TextInput`

@@ -12,7 +12,7 @@ display:flex;
 flex-direction:row ;
 background-color: #0582CA;
 width:100%;
-height:7%;`
+height:10%;`
 
 export const Downbar = styled.View`
 display:flex;
@@ -22,22 +22,27 @@ width:100%;
 height:17%;
 position:absolute;
 bottom:0px;
+gap:20px;
+padding-left:30%;
+padding-right:30%;
 `
 
 export const TitleLeft = styled.Text`
-width:24%;
+width:auto;
 display: flex;
 color: white;
 font-size: 50;
-justify-content:flex-start;
+justify-content:center;
 align-self:flex-start;
 margin-left:20px;
+
+
 `
 export const Logotipo = styled.Image`
 width:50px;
 height:70px;
 align-self:flex-end;
-margin-left:200px;
+margin-left:45%;
 `
 export const ContainerCards = styled.View`
 width:100%;
@@ -47,7 +52,8 @@ gap:30px;`
 export const ComponentContainerCards = styled.View`
 color: white;
 gap:20px;
-margin-right:145px;
+margin-right:40%;
+align-items:flex-end;
 justify-content:space-between;
 `
 

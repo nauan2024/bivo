@@ -10,6 +10,9 @@ import { ContainerCards } from "./styles";
 import Cards from "../../components/cards";
 import { Downbar } from "./styles";
 import { LineDivision } from "./styles";
+import Button from "../../components/button";
+import DoubleLines from "../../components/doublelines";
+
 
 export default function ListaVeiculos() {
     return(
@@ -25,7 +28,9 @@ export default function ListaVeiculos() {
                     <Cards/>
                 </ContainerCards>
                 <Downbar>
-                    
+                    <Button label = "Login"> </Button>
+                    <Button label="Entrada"></Button>
+                    <Button label="Saida"></Button>
                 </Downbar>
                 
                 

@@ -12,6 +12,9 @@ import Input from "../../components/inputtext";
 import { Image } from "react-native";
 import { ContainerLogotipo } from "./styles";
 import { Logotipo } from "./styles";
+import Suporte from "../../components/Suporte";
+import OneLine from "../../components/oneLine";
+import SocialIcons from "../../components/SocialIcons";
 export default function Login() {
     return(
         <LoginContainer>
@@ -32,6 +35,10 @@ export default function Login() {
             <ButtonDad>
                 <Button label="Entrar"></Button>
             </ButtonDad>
+
+            <SocialIcons></SocialIcons>
+            <OneLine></OneLine> 
+            <Suporte></Suporte>           
         </LoginContainer>
     )
 }
