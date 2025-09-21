@@ -47,7 +47,6 @@ border: #003554 solid 2px;
 border-radius:8px;
 background-color:#003554;
 text-align:center;
-padding-left: 78px;
 `
 
 export const ButtonConfig = styled.Button`

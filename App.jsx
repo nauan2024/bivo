@@ -8,6 +8,10 @@ import Cadastro from './src/pages/Cadastro';
 import ListaVeiculos from './src/pages/ListaVeiculos';
 import Entrada from './src/pages/entrada';
 import ImgLogotipo from './src/components/LogotipoComponent';
+import Saida from './src/pages/saida';
+
+
+
 // const Container = styled.View`
 // flex:1;
 // display:flex;
@@ -26,14 +30,10 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <ListaVeiculos/>
+      <Cadastro/>
         {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
-
-
-    
-
   );
 }
 

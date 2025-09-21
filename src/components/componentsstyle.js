@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 
 export const SuporteTextContainer = styled.View`
@@ -6,6 +6,8 @@ flex-direction:row;
 width:100%;
 align-items:center;
 justify-content:center;
+position:absolute;
+bottom:40px;
 `
 
 export const SuporteText = styled.Text`
@@ -70,12 +72,122 @@ justify-content:center;
 `
 
 export const ContainerButton = styled.View`
+display:flex;
   justify-content: center; 
-  align-items: center;     
+  align-items: center;    
   width: 100%;            
   background-color: #003554;
   border-radius: 8px;`
 
   export const TextComum = styled.Text`
 color: white;
+`
+
+export const InfoCards = styled.Text`
+color: white;
+font-size:13px;
+justify-content:flex-end;
+justify-self:flex-end;
+align-self:flex-end;`
+
+export const CamposCards = styled.Text`
+color: white;
+font-size:13px;
+`
+
+export const ComponentContainerCards = styled.View`
+color: white;
+gap:20px;
+margin-right:40%;
+align-items:flex-end;
+justify-content:space-between;
+`
+
+export const CardInfo = styled.View`
+align-self:center;
+background-color:#003554;
+width: 70%;
+height:15%;
+border-radius:10px;
+flex-direction: row;
+color: white;
+
+`
+export const TitleLeft = styled.Text`
+width:auto;
+display: flex;
+color: white;
+font-size: 50;
+justify-content:center;
+align-self:flex-start;
+margin-left:20px;
+
+
+`
+
+export const LineDivisionleft = styled.View`
+
+height: 1;
+background-color: #FFF;
+width: 45%;
+position:absolute;
+`
+
+export const LineDivisionright = styled.View`
+
+height: 1;
+background-color: #FFF;
+width: 45%;
+position:absolute;
+
+right: 0px;
+`
+
+export const EmailInput = styled.TextInput`
+border: 2px solid #003554;
+width: 50%;
+background-color:#003554;
+border-radius:8px;
+color:white;`
+
+export const Nomeinput = styled.TextInput`
+border: 2px solid #003554;
+width: 50%;
+background-color:#003554;
+border-radius:8px;
+color:white;
+`
+export const CircleSocial = styled.View`
+width:50px;
+height:50px;
+border-radius:50px;
+background-color:#003554;
+justify-content:center;`
+
+export const Social = styled.View`
+width:300px;
+height:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;
+margin-bottom:20px;
+align-self:center;
+`
+
+export const ContentSocial = styled.Image`
+align-self:center;
+`
+
+export const TitleStyle = styled.Text`
+width:100%;
+background-color:  #00A6FB;
+display: flex;
+color: white;
+align-self:center;
+font-size: 50px;
+justify-self:center;
+justify-content:center;
+text-align: center;
+margin-top:10%;
 `

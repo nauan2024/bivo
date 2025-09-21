@@ -1,4 +1,4 @@
-import { TitleLeft } from "../pages/ListaVeiculos/styles";
+import { TitleLeft } from "./componentsstyle";
 import { Text } from "react-native";
 
 export default function ComponentTitleLeft({Label}){

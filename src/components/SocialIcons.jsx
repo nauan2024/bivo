@@ -1,7 +1,7 @@
 import { Text, Image } from "react-native";
-import { CircleSocial } from "../pages/entrada/styles";
-import { Social } from "../pages/entrada/styles";
-import { ContentSocial } from "../pages/entrada/styles";
+import { CircleSocial } from "./componentsstyle";
+import { Social } from "./componentsstyle";
+import { ContentSocial } from "./componentsstyle";
 export default function SocialIcons({img}) {
     return(
         <Social>

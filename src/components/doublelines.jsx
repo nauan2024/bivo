@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import { LineDivisionleft } from "../pages/entrada/styles";
-import { LineDivisionright } from "../pages/entrada/styles";
+import { LineDivisionleft } from "./componentsstyle";
+import { LineDivisionright } from "./componentsstyle";
 
 export default function DoubleLines () {
     return(

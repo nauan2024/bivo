@@ -114,9 +114,7 @@ export const LineDivisionleft = styled.View`
 height: 1;
 background-color: #FFF;
 width: 45%;
-margin-top: 10;
 position:absolute;
-bottom: -70px;
 `
 
 export const LineDivisionright = styled.View`
@@ -124,9 +122,8 @@ export const LineDivisionright = styled.View`
 height: 1;
 background-color: #FFF;
 width: 45%;
-margin-top: 10;
 position:absolute;
-bottom: -70px;
+
 right: 0px;
 `
 

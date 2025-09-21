@@ -1,54 +1,45 @@
-import { View } from "react-native";
 import { ContainerCadastro } from "./styles";
-import { LoginContainer } from "./styles";
 import Title from "../../components/title";
 import Button from "../../components/button";
 import { ButtonDad } from "./styles";
-import { ButtonConfig } from "./styles";
 import { InTextcontainer } from "./styles";
-import { EmailInput } from "./styles";
 import { ConstainerTitle } from "./styles";
-import { SenhaInput } from "./styles";
-import { TextComum } from "./styles";
 import Input from "../../components/inputtext";
-import { Image } from "react-native";
-import { ContainerLogotipo } from "./styles";
-import { Logotipo } from "./styles";
 import ImgLogotipo from "../../components/LogotipoComponent";
 import OneLine from "../../components/oneLine";
 import SocialIcons from "../../components/SocialIcons";
 import Suporte from "../../components/Suporte";
 
 export default function Cadastro() {
-    return(
+    return (
         <ContainerCadastro>
-              
-                        
-                        <ConstainerTitle>
-                        <Title label={"Bivô"}></Title>
-                        </ConstainerTitle>
-                       
-                        <ImgLogotipo/>                        
-                        <InTextcontainer>
-                            <Input placeholder="Email :"/>
 
-                            <Input placeholder="Nome :"/>
-            
-                            <Input placeholder="Senha :"/>
-            
-                        </InTextcontainer>
-                        <ButtonDad>
-                            <Button label="Entrar"></Button>
-                        </ButtonDad>
 
-                        <SocialIcons></SocialIcons>
+            <ConstainerTitle>
+                <Title label={"Bivô"}></Title>
+            </ConstainerTitle>
 
-                        <OneLine></OneLine>
+            <ImgLogotipo />
+            <InTextcontainer>
+                <Input placeholder="Email :" />
 
-                        <Suporte/>
+                <Input placeholder="Nome :" />
 
-                        
-                        
+                <Input placeholder="Senha :" />
+
+            </InTextcontainer>
+            <ButtonDad>
+                <Button label="Entrar"></Button>
+            </ButtonDad>
+
+            <SocialIcons></SocialIcons>
+
+            <OneLine></OneLine>
+
+            <Suporte />
+
+
+
         </ContainerCadastro>
     )
 }

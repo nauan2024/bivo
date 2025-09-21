@@ -1,9 +1,10 @@
-import { CardInfo } from "../pages/ListaVeiculos/styles";
+import { CardInfo } from "./componentsstyle";
 import { Text } from "react-native";
 import { View } from "react-native";
-import { ComponentContainerCards } from "../pages/ListaVeiculos/styles";
-import { CamposCards } from "../pages/ListaVeiculos/styles";
+import { ComponentContainerCards } from "./componentsstyle";
+import { CamposCards } from "./componentsstyle";
 import DoubleLines from "./doublelines";
+import { InfoCards } from "./componentsstyle";
 export default function Cards ({Label}) {
     return(
         <CardInfo>
@@ -13,9 +14,9 @@ export default function Cards ({Label}) {
                     <CamposCards> Data: </CamposCards>
                 </ComponentContainerCards>
                 <ComponentContainerCards>
-                    <CamposCards> ABCD1234</CamposCards>
-                    <CamposCards> 20/08/2025</CamposCards>
-                    <CamposCards> 20:08</CamposCards>
+                    <InfoCards> ABCD1234</InfoCards>
+                    <InfoCards> 20/08/2025</InfoCards>
+                    <InfoCards> 20:08</InfoCards>
                     
                 </ComponentContainerCards>
             

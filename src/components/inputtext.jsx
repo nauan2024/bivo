@@ -1,6 +1,5 @@
 import { Text, TouchableOpacity } from "react-native";
-import { EmailInput } from "../pages/login/styles";
-import { Nomeinput } from "../pages/Cadastro/styles";
+import { Nomeinput } from "./componentsstyle";
 export default function Input ({placeholder, value, placeholderTextColor = '#FFFFFF'}) {
     return(
         <Nomeinput placeholder={placeholder}

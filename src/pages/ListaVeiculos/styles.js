@@ -25,6 +25,7 @@ bottom:0px;
 gap:20px;
 padding-left:30%;
 padding-right:30%;
+border: solid white 0.5px;
 `
 
 export const TitleLeft = styled.Text`
@@ -70,6 +71,7 @@ color: white;
 
 export const CamposCards = styled.Text`
 color: white;
+font-size:13px;
 `
 
 export const LineDivision = styled.View`
