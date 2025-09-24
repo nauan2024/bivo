@@ -67,6 +67,7 @@ height:20%;
 align-self:center;
 display:flex;
 align-items:center;
+justify-content:center;
 gap:20px;
 `
 

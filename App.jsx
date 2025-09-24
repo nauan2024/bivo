@@ -9,7 +9,7 @@ import ListaVeiculos from './src/pages/ListaVeiculos';
 import Entrada from './src/pages/entrada';
 import ImgLogotipo from './src/components/LogotipoComponent';
 import Saida from './src/pages/saida';
-
+import Error404 from './src/pages/Error';
 
 
 // const Container = styled.View`
@@ -30,7 +30,7 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <Cadastro/>
+      <ListaVeiculos/>
         {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>

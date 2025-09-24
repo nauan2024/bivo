@@ -28,10 +28,7 @@ export default function Cadastro() {
                 <Input placeholder="Senha :" />
 
             </InTextcontainer>
-            <ButtonDad>
                 <Button label="Entrar"></Button>
-            </ButtonDad>
-
             <SocialIcons></SocialIcons>
 
             <OneLine></OneLine>

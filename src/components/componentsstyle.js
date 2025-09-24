@@ -55,9 +55,7 @@ display:flex;
 justify-content:center;
 align-self:center;
 color: white;
-border: #003554 solid 2px;
 border-radius:8px;
-background-color:#003554;
 text-align:center;
 `
 
@@ -69,18 +67,25 @@ border: black solid 2px;
 text-align:center;   
 justify-content:center;
 
+
 `
 
 export const ContainerButton = styled.View`
 display:flex;
   justify-content: center; 
   align-items: center;    
-  width: 100%;            
+  width: 150px;            
   background-color: #003554;
-  border-radius: 8px;`
+  border-radius: 8px;
+  height:50px;
+  justify-self:center;
+  align-self:center;
+  
+`
+
 
   export const TextComum = styled.Text`
-color: white;
+  color: white;
 `
 
 export const InfoCards = styled.Text`

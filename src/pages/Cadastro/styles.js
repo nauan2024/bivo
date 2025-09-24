@@ -68,6 +68,8 @@ align-self:center;
 display:flex;
 align-items:center;
 gap:20px;
+justify-content:center;
+
 `
 
 export const EmailInput = styled.TextInput`

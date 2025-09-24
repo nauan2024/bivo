@@ -12,20 +12,21 @@ display:flex;
 flex-direction:row ;
 background-color: #0582CA;
 width:100%;
-height:10%;`
+height:7%;`
 
 export const Downbar = styled.View`
+flex-direction: row;
 display:flex;
-justify-content:Bottom;
 background-color: #0582CA;
 width:100%;
-height:17%;
+height:12%;
 position:absolute;
 bottom:0px;
 gap:20px;
-padding-left:30%;
-padding-right:30%;
 border: solid white 0.5px;
+align-items:center;
+justify-content:center;
+
 `
 
 export const TitleLeft = styled.Text`

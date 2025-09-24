@@ -25,15 +25,8 @@ export default function Saida() {
 
             <InTextcontainer>
                 <Input placeholder="Placa :" />
-
-                <Input placeholder="Data :" />
-
-                <Input placeholder="Hora :" />
-
             </InTextcontainer>
-            <ButtonDad>
                 <Button label="Saida"></Button>
-            </ButtonDad>
             <SocialIcons></SocialIcons>
 
             <Line></Line>

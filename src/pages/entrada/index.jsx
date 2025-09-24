@@ -23,14 +23,10 @@ export default function Entrada() {
             <InTextcontainer>
                 <Input placeholder="Placa :" />
 
-                <Input placeholder="Data :" />
 
-                <Input placeholder="Hora :" />
 
             </InTextcontainer>
-            <ButtonDad>
                 <Button label="Entrada" ></Button>
-            </ButtonDad>
             <SocialIcons></SocialIcons>
             <Line></Line>
             <Suporte></Suporte>

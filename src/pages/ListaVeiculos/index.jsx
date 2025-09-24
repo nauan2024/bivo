@@ -7,6 +7,7 @@ import Cards from "../../components/cards";
 import { Downbar } from "./styles";
 import Button from "../../components/button";
 import DoubleLines from "../../components/doublelines";
+import { ButtonDad } from "../login/styles";
 
 
 export default function ListaVeiculos() {
@@ -27,9 +28,8 @@ export default function ListaVeiculos() {
                 <DoubleLines />
             </ContainerCards>
             <Downbar>
-                <Button label="Login"> </Button>
                 <Button label="Entrada"></Button>
-                <Button label="Saida"></Button>
+                <Button label="Saida"></Button>                
             </Downbar>
 
         </ContainerListaVeiculos>

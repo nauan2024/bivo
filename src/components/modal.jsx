@@ -10,7 +10,7 @@ import {
   CloseText
 } from './styles';
 
-export default function CustomModal({ visible, onClose, title, children }) {
+export default function CustomModal({ visible, onClose, label, children }) {
   return (
     <Modal
       visible={visible}          // controla se o modal aparece
@@ -20,7 +20,7 @@ export default function CustomModal({ visible, onClose, title, children }) {
     >
       <Overlay>
         <Box>
-          <Title>{title}</Title>
+          <Title>{label}</Title>
 
           <Content>
             {children}            {/* conteúdo passado pela tela */}
