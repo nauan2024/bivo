@@ -9,6 +9,8 @@ import Suporte from "../../components/Suporte";
 import OneLine from "../../components/oneLine";
 import SocialIcons from "../../components/SocialIcons";
 import ImgLogotipo from "../../components/LogotipoComponent";
+import AnchorLogin from "../../components/AnchorLogin";
+
 export default function Login() {
     return (
         <LoginContainer>
@@ -29,6 +31,7 @@ export default function Login() {
                 <Button label="Entrar"></Button>
 
             <SocialIcons></SocialIcons>
+            <AnchorLogin label={"não tem cadastro?"} anchor={"Cadastre-se"}></AnchorLogin>
             <OneLine></OneLine>
             <Suporte></Suporte>
         </LoginContainer>
