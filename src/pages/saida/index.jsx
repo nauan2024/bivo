@@ -27,7 +27,6 @@ export default function Saida() {
                 <Input placeholder="Placa :" />
             </InTextcontainer>
                 <Button label="Saida"></Button>
-            <SocialIcons></SocialIcons>
 
             <Line></Line>
 

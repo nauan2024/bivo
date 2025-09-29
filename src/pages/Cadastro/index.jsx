@@ -9,7 +9,7 @@ import ImgLogotipo from "../../components/LogotipoComponent";
 import OneLine from "../../components/oneLine";
 import SocialIcons from "../../components/SocialIcons";
 import Suporte from "../../components/Suporte";
-
+import AnchorLogin from "../../components/AnchorLogin";
 export default function Cadastro() {
     return (
         <ContainerCadastro>
@@ -17,7 +17,9 @@ export default function Cadastro() {
 
             <ConstainerTitle>
                 <Title label={"Bivô"}></Title>
+
             </ConstainerTitle>
+
 
             <ImgLogotipo />
             <InTextcontainer>
@@ -31,11 +33,11 @@ export default function Cadastro() {
                 <Button label="Entrar"></Button>
             <SocialIcons></SocialIcons>
 
-            <OneLine></OneLine>
+            <OneLine/>
 
             <Suporte />
 
-
+            <AnchorLogin label={"Tem cadastro?"} anchor={"Login"}/>
 
         </ContainerCadastro>
     )

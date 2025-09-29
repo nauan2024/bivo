@@ -12,11 +12,11 @@ bottom:40px;
 
 export const SuporteText = styled.Text`
 color:white;
-width:100px;
+
 `
 export const SuporteTextAnchor = styled.Text`
 color:black;
-width:100px;
+margin-left: 20px;
 `
 export const ContainerLogotipo = styled.Image`
 display:flex;
@@ -195,4 +195,21 @@ justify-self:center;
 justify-content:center;
 text-align: center;
 margin-top:10%;
+`
+
+export const AnchorLoginTextContainer = styled.View`
+flex-direction:row;
+width:100%;
+align-items:center;
+justify-content:center;
+align-self: center;
+text-align: center;
+`
+
+export const AnchorLoginText = styled.Text`
+color:white;
+`
+export const AnchorLoginTextAnchor = styled.Text`
+color:black;
+margin-left: 20px;
 `

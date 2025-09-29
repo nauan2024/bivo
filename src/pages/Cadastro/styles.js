@@ -120,3 +120,14 @@ margin-top: 10;
 position:absolute;
 bottom: 50px;
 `
+
+export const AnchorLogin = styled.View`
+display:flex;
+color: white;
+width: 100%;
+height:50px;
+align-items: flex-start;
+justify-content:flex-start;
+background-color:transparent;
+opacity:100%;
+`

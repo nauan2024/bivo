@@ -27,7 +27,6 @@ export default function Entrada() {
 
             </InTextcontainer>
                 <Button label="Entrada" ></Button>
-            <SocialIcons></SocialIcons>
             <Line></Line>
             <Suporte></Suporte>
 

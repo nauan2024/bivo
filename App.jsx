@@ -43,10 +43,8 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   //   justifyContent: 'center',
   // },
-
   // topo: {
   //   flex:1,
   //   color:"white",
-    
   // }
 });
