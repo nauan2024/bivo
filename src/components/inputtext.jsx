@@ -4,7 +4,8 @@ export default function Input ({placeholder, value, placeholderTextColor = '#FFF
     return(
         <Nomeinput placeholder={placeholder}
         placeholderTextColor = '#FFFFFF'
-        // defino aqui a cor do Input
+        // defino aqui a cor do Input 
+        
          >{value}</Nomeinput>
         
     )

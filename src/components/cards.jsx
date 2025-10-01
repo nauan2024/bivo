@@ -5,20 +5,30 @@ import { ComponentContainerCards } from "./componentsstyle";
 import { CamposCards } from "./componentsstyle";
 import DoubleLines from "./doublelines";
 import { InfoCards } from "./componentsstyle";
+import { Backbar } from "./componentsstyle";
 export default function Cards ({Label}) {
     return(
         <CardInfo>
                 <ComponentContainerCards>
+                    <Backbar>
+
                     <CamposCards> Placa: </CamposCards>
-                    <CamposCards> Hora: </CamposCards>
-                    <CamposCards> Data: </CamposCards>
-                </ComponentContainerCards>
-                <ComponentContainerCards>
                     <InfoCards> ABCD1234</InfoCards>
-                    <InfoCards> 20/08/2025</InfoCards>
-                    <InfoCards> 20:08</InfoCards>
+                    </Backbar>
                     
+                    <Backbar>
+                        <CamposCards> Hora: </CamposCards>
+                        <InfoCards> 20:08</InfoCards>
+                    </Backbar>
+                    
+                    <Backbar>
+                        <CamposCards> Data: </CamposCards>
+                        <InfoCards> 20/08/2025</InfoCards>
+                    </Backbar>
+                    
+
                 </ComponentContainerCards>
+                
             
         </CardInfo>
         

@@ -93,7 +93,7 @@ color: white;
 font-size:13px;
 justify-content:flex-end;
 justify-self:flex-end;
-align-self:flex-end;`
+align-self:center;`
 
 export const CamposCards = styled.Text`
 color: white;
@@ -103,20 +103,22 @@ font-size:13px;
 export const ComponentContainerCards = styled.View`
 color: white;
 gap:20px;
-margin-right:40%;
 align-items:flex-end;
 justify-content:space-between;
+padding: 5px;
 `
 
 export const CardInfo = styled.View`
 align-self:center;
+justify-content: center;
 background-color:#003554;
-width: 70%;
-height:15%;
+width: 247px;
+height:160px;
 border-radius:10px;
 flex-direction: row;
 color: white;
-
+padding: 10px;
+box-shadow: 2px 2px ;
 `
 export const TitleLeft = styled.Text`
 width:auto;
@@ -212,4 +214,19 @@ color:white;
 export const AnchorLoginTextAnchor = styled.Text`
 color:black;
 margin-left: 20px;
+`
+
+export const Backbar = styled.View`
+background-color:#0582CA;
+width: 230;
+height: 30px;
+border-radius: 5px;
+flex-direction: row;
+gap: 90px;
+font-size: 10px;
+padding-right: 5px;
+padding-left: 5px;
+display: flex;
+align-items:center;
+
 `

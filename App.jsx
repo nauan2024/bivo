@@ -30,7 +30,7 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <Login/>
+      <ListaVeiculos/>
         {/* <Image source={"././src/assets"}></Image> */}
 
      </ContainerApp>
