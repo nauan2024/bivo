@@ -10,7 +10,23 @@ import Entrada from './src/pages/entrada';
 import ImgLogotipo from './src/components/LogotipoComponent';
 import Saida from './src/pages/saida';
 import Error404 from './src/pages/Error';
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+
+
+const RootStack = createNativeStackNavigator ({
+  initialRouteName:"Home",
+  screens: {
+    Home : Login,
+    Cadastro : Cadastro,
+    Entrada : Entrada,
+    Main : ListaVeiculos,
+    Saida : Saida
+  }
+})
+
+const Navigation = createStaticNavigation (RootStack)
 
 // const Container = styled.View`
 // flex:1;
@@ -30,9 +46,8 @@ export default function App() {
 
    
       <StatusBar hidden />
-      <ListaVeiculos/>
-        {/* <Image source={"././src/assets"}></Image> */}
-
+      
+      <Navigation></Navigation>
      </ContainerApp>
   );
 }

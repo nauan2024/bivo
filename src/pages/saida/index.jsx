@@ -26,7 +26,7 @@ export default function Saida() {
             <InTextcontainer>
                 <Input placeholder="Placa :" />
             </InTextcontainer>
-                <Button label="Saida"></Button>
+                <Button label="Saida"  ></Button>
 
             <Line></Line>
 

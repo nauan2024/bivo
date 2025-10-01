@@ -10,7 +10,9 @@ import OneLine from "../../components/oneLine";
 import SocialIcons from "../../components/SocialIcons";
 import Suporte from "../../components/Suporte";
 import AnchorLogin from "../../components/AnchorLogin";
+import { useNavigation } from "@react-navigation/native";
 export default function Cadastro() {
+    const navigation = useNavigation()
     return (
         <ContainerCadastro>
 
@@ -30,14 +32,14 @@ export default function Cadastro() {
                 <Input placeholder="Senha :" />
 
             </InTextcontainer>
-                <Button label="Entrar"></Button>
+                <Button label="Entrar" onPress={() => navigation.navigate("Home")}></Button>
             <SocialIcons></SocialIcons>
 
             <OneLine/>
 
             <Suporte />
 
-            <AnchorLogin label={"Tem cadastro?"} anchor={"Login"}/>
+            <AnchorLogin label={"Tem cadastro?"} anchor={"Login"} onPress={() => navigation.navigate("Home")}/>
 
         </ContainerCadastro>
     )

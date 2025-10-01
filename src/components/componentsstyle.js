@@ -214,6 +214,9 @@ color:white;
 export const AnchorLoginTextAnchor = styled.Text`
 color:black;
 margin-left: 20px;
+
+
+
 `
 
 export const Backbar = styled.View`

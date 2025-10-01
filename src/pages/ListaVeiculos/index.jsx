@@ -8,9 +8,13 @@ import { Downbar } from "./styles";
 import Button from "../../components/button";
 import DoubleLines from "../../components/doublelines";
 import { ButtonDad } from "../login/styles";
+import { useNavigation } from "@react-navigation/native";
 
 
 export default function ListaVeiculos() {
+    
+        const navigation = useNavigation()
+
     return (
         <ContainerListaVeiculos>
             <Upbar>
@@ -28,8 +32,8 @@ export default function ListaVeiculos() {
                 <DoubleLines />
             </ContainerCards>
             <Downbar>
-                <Button label="Entrada"></Button>
-                <Button label="Saida"></Button>                
+                <Button label="Entrada" onPress={() => navigation.navigate("Entrada")}></Button>
+                <Button label="Saida" onPress={() => navigation.navigate("Saida")}></Button>                
             </Downbar>
 
         </ContainerListaVeiculos>
