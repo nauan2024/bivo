@@ -33,9 +33,9 @@ export default function Login({navigator}) {
                 <Input placeholder="Email :" />
 
                 <Input placeholder="Senha :" />
-
+            
             </InTextcontainer>
-                <Button label="Entrar"  onPress={() => navigation.navigate("Main")} ></Button>
+                <Button label="Entrar"  onPress={() => navigation.navigate("Main")}></Button>
 
             <SocialIcons></SocialIcons>
             <AnchorLogin label={"não tem cadastro?"} anchor={"Cadastre-se"} onPress={() => navigation.navigate("Cadastro")}></AnchorLogin>

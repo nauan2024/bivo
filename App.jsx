@@ -12,21 +12,24 @@ import Saida from './src/pages/saida';
 import Error404 from './src/pages/Error';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Cep from './src/pages/Cep/indes';
 
 
 
-const RootStack = createNativeStackNavigator ({
-  initialRouteName:"Home",
-  screens: {
-    Home : Login,
-    Cadastro : Cadastro,
-    Entrada : Entrada,
-    Main : ListaVeiculos,
-    Saida : Saida
-  }
-})
+// const RootStack = createNativeStackNavigator ({
+//   initialRouteName:"Home",
+//   screens: {
+//     Home : Login,
+//     Cadastro : Cadastro,
+//     Entrada : Entrada,
+//     Main : ListaVeiculos,
+//     Saida : Saida
+//   }, screenOptions: {
+//     headerShown:false
+//   }
+// })
 
-const Navigation = createStaticNavigation (RootStack)
+// const Navigation = createStaticNavigation (RootStack)
 
 // const Container = styled.View`
 // flex:1;
@@ -46,8 +49,10 @@ export default function App() {
 
    
       <StatusBar hidden />
+
+      <Cep />
       
-      <Navigation></Navigation>
+      {/* <Navigation></Navigation> */}
      </ContainerApp>
   );
 }
