@@ -1,36 +1,31 @@
-import { CardInfo } from "./componentsstyle";
-import { Text } from "react-native";
-import { View } from "react-native";
-import { ComponentContainerCards } from "./componentsstyle";
-import { CamposCards } from "./componentsstyle";
-import DoubleLines from "./doublelines";
-import { InfoCards } from "./componentsstyle";
-import { Backbar } from "./componentsstyle";
-export default function Cards ({Label}) {
-    return(
+import React from 'react';
+// Seus imports de componentes de estilo
+import { CardInfo, ComponentContainerCards, CamposCards, InfoCards, Backbar } from "./componentsstyle";
+
+// --- A MUDANÇA ESTÁ AQUI ---
+// O componente agora espera receber 'placa', 'data' e 'hora'
+export default function Cards({ placa, data, hora }) {
+    return (
         <CardInfo>
-                <ComponentContainerCards>
-                    <Backbar>
+            <ComponentContainerCards>
+                <Backbar>
+                    <CamposCards>Placa:</CamposCards>
+                    {/* Exibe a placa recebida via props */}
+                    <InfoCards>{placa}</InfoCards>
+                </Backbar>
 
-                    <CamposCards> Placa: </CamposCards>
-                    <InfoCards> ABCD1234</InfoCards>
-                    </Backbar>
-                    
-                    <Backbar>
-                        <CamposCards> Hora: </CamposCards>
-                        <InfoCards> 20:08</InfoCards>
-                    </Backbar>
-                    
-                    <Backbar>
-                        <CamposCards> Data: </CamposCards>
-                        <InfoCards> 20/08/2025</InfoCards>
-                    </Backbar>
-                    
+                <Backbar>
+                    <CamposCards>Hora:</CamposCards>
+                    {/* Exibe a hora recebida via props */}
+                    <InfoCards>{hora}</InfoCards>
+                </Backbar>
 
-                </ComponentContainerCards>
-                
-            
+                <Backbar>
+                    <CamposCards>Data:</CamposCards>
+                    {/* Exibe a data recebida via props */}
+                    <InfoCards>{data}</InfoCards>
+                </Backbar>
+            </ComponentContainerCards>
         </CardInfo>
-        
-    )
+    );
 }

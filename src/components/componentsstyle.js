@@ -119,6 +119,7 @@ flex-direction: row;
 color: white;
 padding: 10px;
 box-shadow: 2px 2px ;
+margin-top:20px;
 `
 export const TitleLeft = styled.Text`
 width:auto;
@@ -157,13 +158,18 @@ background-color:#003554;
 border-radius:8px;
 color:white;`
 
-export const Nomeinput = styled.TextInput`
-border: 2px solid #003554;
-width: 50%;
-background-color:#003554;
-border-radius:8px;
-color:white;
-`
+export const CustomTextInput = styled.TextInput`
+  width: 50%;
+  background-color: #003554;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #003554; /* Usando a sintaxe correta */
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+`;
+
 export const CircleSocial = styled.View`
 width:50px;
 height:50px;

@@ -1,22 +1,13 @@
-import { Text, TouchableOpacity } from "react-native";
-import { Nomeinput } from "./componentsstyle";
-export default function Input ({placeholder, value, placeholderTextColor = '#FFFFFF'}) {
-    return(
-        <Nomeinput placeholder={placeholder}
-        placeholderTextColor = '#FFFFFF'
-        // defino aqui a cor do Input 
-        
-         >{value}</Nomeinput>
-        
-    )
+import React from 'react';
+// 1. Importe o estilo do seu arquivo central de estilos
+import { CustomTextInput } from './componentsstyle';
+
+// 2. O componente funcional que usa o estilo importado
+export default function Input(props) {
+  return (
+    <CustomTextInput
+      {...props} // Repassa todas as propriedades (value, onChangeText, etc.)
+      placeholderTextColor="#A9A9A9"
+    />
+  );
 }
-
-// const styles = StyleSheet.create ({
-//     EmailInput :
-// border: "2px solid #003554",
-// width: 50%,
-// background-color:#003554,
-// border-radius:8px,
-// color:white;
-// })
-

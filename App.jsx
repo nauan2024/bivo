@@ -1,70 +1,46 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView, Image,Label } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import styled from 'styled-components/native';
+
+// Telas
 import Login from './src/pages/login';
-import button from './src/components/button';
-import Title from './src/components/title';
 import Cadastro from './src/pages/Cadastro';
 import ListaVeiculos from './src/pages/ListaVeiculos';
 import Entrada from './src/pages/entrada';
-import ImgLogotipo from './src/components/LogotipoComponent';
 import Saida from './src/pages/saida';
-import Error404 from './src/pages/Error';
-import { createStaticNavigation } from '@react-navigation/native';
+
+// Importações corretas para navegação
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Cep from './src/pages/Cep/indes';
 
+// 1. Criar o Stack Navigator da forma correta
+const Stack = createNativeStackNavigator();
 
-
-// const RootStack = createNativeStackNavigator ({
-//   initialRouteName:"Home",
-//   screens: {
-//     Home : Login,
-//     Cadastro : Cadastro,
-//     Entrada : Entrada,
-//     Main : ListaVeiculos,
-//     Saida : Saida
-//   }, screenOptions: {
-//     headerShown:false
-//   }
-// })
-
-// const Navigation = createStaticNavigation (RootStack)
-
-// const Container = styled.View`
-// flex:1;
-// display:flex;
-// flex-direction: column;
-// background-color: red;
-// align-items: center;
-// justify-content: center;
-// `
 const ContainerApp = styled.SafeAreaView`
-  flex:1;
-`
+  flex: 1;
+`;
 
 export default function App() {
   return (
     <ContainerApp>
-
-   
       <StatusBar hidden />
-
-      <Cep />
-      
-      {/* <Navigation></Navigation> */}
-     </ContainerApp>
+      {/* 2. Envolver tudo no NavigationContainer */}
+      <NavigationContainer>
+        {/* 3. Usar os componentes do Stack para definir as telas */}
+        <Stack.Navigator
+          initialRouteName="Main"
+          screenOptions={{
+            headerShown: false // Opção para esconder o cabeçalho
+          }}
+        >
+          {/* Cada tela é definida com Stack.Screen */}
+          <Stack.Screen name="Home" component={Login} />
+          <Stack.Screen name="Cadastro" component={Cadastro} />
+          <Stack.Screen name="Entrada" component={Entrada} />
+          <Stack.Screen name="Main" component={ListaVeiculos} />
+          <Stack.Screen name="Saida" component={Saida} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ContainerApp>
   );
 }
-
-const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
-  // topo: {
-  //   flex:1,
-  //   color:"white",
-  // }
-});
