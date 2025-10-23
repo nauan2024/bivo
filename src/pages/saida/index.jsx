@@ -38,9 +38,7 @@ export default function Saida() {
 
             const veiculoParaSair = veiculosEncontrados[0];
 
-            // --- A CORREÇÃO ESTÁ AQUI ---
-            // Trocamos 'veiculoParaSair.id' por 'veiculoParaSair.id_carro',
-            // que é o nome do campo que o seu log de depuração mostrou.
+            
             const urlUpdate = `https://68ec4378eff9ad3b14019f4d.mockapi.io/carros/${veiculoParaSair.id_carro}`;
 
             const dadosSaida = {
