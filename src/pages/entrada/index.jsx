@@ -21,49 +21,25 @@ export default function Entrada() {
         const placaFormatada = placa.toUpperCase();
         
         try {
-            const urlBusca = `https://68ec4378eff9ad3b14019f4d.mockapi.io/carros?placa=${placaFormatada}`;
-            const responseBusca = await fetch(urlBusca);
-            const carrosEncontrados = await responseBusca.json();
+            // Esta função agora SEMPRE tentará criar um novo registro (POST)
+            const urlCriacao = "https://68ec4378eff9ad3b14019f4d.mockapi.io/carros";
+            
+            const dadosCriacao = { 
+                placa: placaFormatada, 
+                horaEntrada: Math.floor(new Date().getTime() / 1000), 
+                horaSaida: null, 
+                presenca: true 
+            };
+            
+            const responseCriacao = await fetch(urlCriacao, { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' }, 
+                body: JSON.stringify(dadosCriacao) 
+            });
 
-            if (carrosEncontrados.length === 0) {
-                const urlCriacao = "https://68ec4378eff9ad3b14019f4d.mockapi.io/carros";
-                const dadosCriacao = { 
-                    placa: placaFormatada, 
-                    horaEntrada: Math.floor(new Date().getTime() / 1000), 
-                    horaSaida: null, 
-                    presenca: true 
-                };
-                const responseCriacao = await fetch(urlCriacao, { 
-                    method: 'POST', 
-                    headers: { 'Content-Type': 'application/json' }, 
-                    body: JSON.stringify(dadosCriacao) 
-                });
-                if (!responseCriacao.ok) { 
-                    const errorText = await responseCriacao.text(); 
-                    throw new Error(`Falha ao criar. Servidor: ${errorText}`); 
-                }
-            } else {
-                const carroExistente = carrosEncontrados[0];
-                if (carroExistente.presenca === true) {
-                    Alert.alert("Atenção", "Este veículo já se encontra no pátio.");
-                    return;
-                } else {
-                    const urlUpdate = `https://68ec4378eff9ad3b14019f4d.mockapi.io/carros/${carroExistente.id}`;
-                    const dadosUpdate = { 
-                        presenca: true, 
-                        horaEntrada: Math.floor(new Date().getTime() / 1000), 
-                        horaSaida: null 
-                    };
-                    const responseUpdate = await fetch(urlUpdate, {
-                        method: 'PUT',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(dadosUpdate),
-                    });
-                    if (!responseUpdate.ok) { 
-                        const errorText = await responseUpdate.text(); 
-                        throw new Error(`O servidor rejeitou a atualização. Mensagem: ${errorText}`); 
-                    }
-                }
+            if (!responseCriacao.ok) { 
+                const errorText = await responseCriacao.text(); 
+                throw new Error(`Falha ao criar. Servidor: ${errorText}`); 
             }
 
             Alert.alert("Sucesso", "Entrada do veículo registrada com sucesso!");

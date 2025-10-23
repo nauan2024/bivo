@@ -30,9 +30,8 @@ width:25%;
 height:15%;
 align-self:center;
 justify-self:center;
-justify-self:center;
-align-items:center;
-justify-content:center;`
+margin-right: 20px;
+`
 
 
 export const Line = styled.View`
@@ -122,12 +121,12 @@ box-shadow: 2px 2px ;
 margin-top:20px;
 `
 export const TitleLeft = styled.Text`
-width:auto;
+width:35%;
 display: flex;
 color: white;
-font-size: 50;
+font-size: 30px;
 justify-content:center;
-align-self:flex-start;
+align-self: center;
 margin-left:20px;
 
 

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ActivityIndicator, Text, FlatList, View } from 'react-native';
 import { useNavigation, useIsFocused } from "@react-navigation/native";
 
-// Seus imports de componentes e estilos
 import { ContainerListaVeiculos, Upbar, Logotipo, Downbar } from "./styles";
 import ComponentTitleLeft from "../../components/ComponentTitleLeft";
 import Cards from "../../components/cards";
@@ -12,7 +11,6 @@ export default function ListaVeiculos() {
     const navigation = useNavigation();
     const isFocused = useIsFocused(); 
 
-    // Estados para guardar os dados, o carregamento e possíveis erros
     const [veiculos, setVeiculos] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -77,7 +75,7 @@ async function fetchVeiculos() {
     return (
         <ContainerListaVeiculos>
             <Upbar>
-                <ComponentTitleLeft Label={"Veículos no Pátio"} />
+                <ComponentTitleLeft Label={"Veículos"} />
                 <Logotipo source={require("../../../src/assets/logotipo.png")} />
             </Upbar>
 
