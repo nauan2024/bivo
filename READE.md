@@ -66,8 +66,8 @@ Como o projeto utiliza uma API de simulação, você precisa criar a sua própri
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_GIT]
-    cd [NOME_DA_PASTA_DO_PROJETO]
+    git clone [https://github.com/nauan2024/bivo.git]
+    cd [bivo]
     ```
 
 2.  **Instale as dependências:**
