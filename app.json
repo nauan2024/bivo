@@ -20,10 +20,16 @@
         "foregroundImage": "",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.n4u4n2020.bivo"
     },
     "web": {
       "favicon": ""
+    },
+    "extra": {
+      "eas": {
+        "projectId": "09113bbf-0622-4e0b-9710-22fb0a44c110"
+      }
     }
   }
 }
