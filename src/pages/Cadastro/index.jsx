@@ -85,7 +85,6 @@ export default function Cadastro() {
 
             <SocialIcons />
             <OneLine />
-            <Suporte />
 
             <AnchorLogin
                 label={"Tem cadastro?"}

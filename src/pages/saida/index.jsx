@@ -87,7 +87,6 @@ export default function Saida() {
             <Button label="Confirmar Saída" onPress={handleSaida} />
 
             <Line />
-            <Suporte />
         </ContainerSaida>
     );
 }

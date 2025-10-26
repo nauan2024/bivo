@@ -4,11 +4,11 @@
     "slug": "bivo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./src/assets/logotipo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "",
+      "image": "./src/assets/logotipo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,14 +17,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "",
+        "foregroundImage": "./src/assets/logotipo.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.n4u4n2020.bivo"
     },
     "web": {
-      "favicon": ""
+      "favicon": "./src/assets/logotipo.png"
     },
     "extra": {
       "eas": {

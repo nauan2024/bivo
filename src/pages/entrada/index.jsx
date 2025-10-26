@@ -73,7 +73,6 @@ export default function Entrada() {
             <Button label="Confirmar Entrada" onPress={handleEntrada} />
 
             <Line />
-            <Suporte />
         </ContainerEntrada>
     );
 }

@@ -88,7 +88,6 @@ export default function Login() {
                 onPress={() => navigation.navigate("Cadastro")}
             />
             <OneLine />
-            <Suporte />
         </LoginContainer>
     );
 }
