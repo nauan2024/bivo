@@ -86,7 +86,7 @@ async function fetchVeiculos() {
                     const { data, hora } = formatTimestamp(item.horaEntrada);
                     return <Cards placa={item.placa} data={data} hora={hora} />;
                 }}
-                contentContainerStyle={{ alignItems: 'center', paddingVertical: 20 }}
+                contentContainerStyle={{ alignItems: 'center', paddingBottom: 80, paddingTop: 20  }}
                 ListEmptyComponent={
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 50 }}>
                         <Text style={{ color: 'gray', fontSize: 16 }}>Nenhum veículo no pátio.</Text>
